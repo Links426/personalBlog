@@ -4,3 +4,7 @@ div{
 .pointer{
     cursor: pointer;
 }
+/* 0.3s的动画 */
+.transition-3s {
+    transition: all 0.3s;
+  }
