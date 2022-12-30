@@ -13,6 +13,7 @@
     "@element-plus/icons-vue": "^2.0.10",
     "element-plus": "^2.2.26",
     "path": "^0.12.7",
+    "pinia": "^2.0.28",
     "vant": "^4.0.3",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
