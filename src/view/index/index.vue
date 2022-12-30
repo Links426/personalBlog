@@ -110,6 +110,7 @@
                     <a
                       class="text-#fff bg-#4380FF pt-10px pb-10px pl-20px pr-20px rounded-20px"
                       href="https://github.com/XLin2048?tab=repositories"
+                      target="_blank"
                       >XLin2048</a
                     >
                   </div>
