@@ -19,7 +19,7 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@types/node": "^18.11.17",
+    "@types/node": "^18.11.18",
     "@unocss/preset-attributify": "^0.47.6",
     "@unocss/preset-icons": "^0.47.6",
     "@unocss/preset-uno": "^0.47.6",

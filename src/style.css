@@ -8,3 +8,5 @@ div{
 .transition-3s {
     transition: all 0.3s;
   }
+  /* 隐藏滚动条 */
+.scrollHidden::-webkit-scrollbar { width: 0 !important }
