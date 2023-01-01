@@ -19,6 +19,11 @@ const routes = [
         name: 'Technology',
         component: () => import('@/view/technology/technology.vue'),
       },
+      {
+        path: 'download',
+        name: 'Download',
+        component: () => import('@/view/download/download.vue'),
+      },
     ],
   },
 ]
