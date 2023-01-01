@@ -101,6 +101,8 @@ const activeMenu = (item: number) => {
     router.push('/share')
   } else if (item === 2) {
     router.push('/technology')
+  } else if (item === 3) {
+    router.push('/download')
   }
 }
 onMounted(() => {
