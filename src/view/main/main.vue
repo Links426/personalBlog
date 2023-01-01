@@ -74,7 +74,7 @@
 import { useRouter } from 'vue-router'
 // pinia获取左侧列表状态管理
 import { storeToRefs } from 'pinia'
-import leftBannerStore from '@/store/counter'
+import leftBannerStore from '@/store/leftBannerOpen'
 const leftBanner = leftBannerStore()
 const { leftBannerStatus } = storeToRefs(leftBanner)
 
@@ -99,12 +99,21 @@ const activeMenu = (item: number) => {
     router.push('/')
   } else if (item === 1) {
     router.push('/share')
+  } else if (item === 2) {
+    router.push('/technology')
   }
 }
 onMounted(() => {
   activeMenuNum.value = Number(localStorage.getItem('leftBannerSelect'))
   router.push('/' + localStorage.getItem('page'))
 })
+// 监控左边 nav 栏 点击 传值
+watch(
+  () => router.currentRoute.value,
+  () => {
+    activeMenuNum.value = Number(localStorage.getItem('leftBannerSelect'))
+  }
+)
 </script>
 
 <style scoped>

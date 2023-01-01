@@ -175,7 +175,7 @@
 </template>
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import leftBannerStore from '@/store/counter'
+import leftBannerStore from '@/store/leftBannerOpen'
 import router from '@/router'
 const leftBanner = leftBannerStore()
 const { leftBannerStatus } = storeToRefs(leftBanner)

@@ -150,7 +150,7 @@
 import getImgFile from '@/util/getStaticFile'
 // 从pinia获取左侧状态栏的状态
 import { storeToRefs } from 'pinia'
-import leftBannerStore from '@/store/counter'
+import leftBannerStore from '@/store/leftBannerOpen'
 const leftBanner = leftBannerStore()
 const { leftBannerStatus } = storeToRefs(leftBanner)
 onMounted(() => {

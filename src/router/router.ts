@@ -2,7 +2,7 @@ const routes = [
   {
     path: '/',
     component: () => import('@/view/main/main.vue'),
-    redirect:'/index',
+    redirect: '/index',
     children: [
       {
         path: 'index',
@@ -13,6 +13,11 @@ const routes = [
         path: 'share',
         name: 'Share',
         component: () => import('@/view/personShare/share.vue'),
+      },
+      {
+        path: 'technology',
+        name: 'Technology',
+        component: () => import('@/view/technology/technology.vue'),
       },
     ],
   },
