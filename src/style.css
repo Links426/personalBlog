@@ -1,12 +1,25 @@
-div{
-    box-sizing:border-box
+div {
+  box-sizing: border-box;
 }
-.pointer{
-    cursor: pointer;
+.pointer {
+  cursor: pointer;
 }
 /* 0.3s的动画 */
 .transition-3s {
-    transition: all 0.3s;
-  }
-  /* 隐藏滚动条 */
-.scrollHidden::-webkit-scrollbar { width: 0 !important }
+  transition: all 0.3s;
+}
+/* 隐藏滚动条 */
+.scrollHidden::-webkit-scrollbar {
+  width: 0 !important;
+}
+/* 卡片阴影 */
+.cardShadow:hover {
+  box-shadow: 0px 4px 43px -19px rgba(0, 0, 0, 0.3);
+}
+/* 签名字体 */
+.signFont {
+  font-family: HanziPenSC-W3;
+}
+textarea {
+  resize: none;
+}
