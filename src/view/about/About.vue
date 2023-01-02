@@ -10,11 +10,13 @@
     <!-- 内容 -->
     <!-- 上半部分 -->
     <div class="w-full h-600px bg-#171c29 flex-center-col">
-      <img src="@/static/img/QQ20221226-1.jpg" class="w-300px rounded-50%" />
-      <div
-        class="text-white absolute op-60 text-28px font-500 top-350px left-830px signFont"
-      >
-        XLin
+      <div relative>
+        <img src="@/static/img/QQ20221226-1.jpg" class="w-300px rounded-50%" />
+        <div
+          class="text-white absolute op-60 text-28px font-500 top-250px left-230px signFont"
+        >
+          XLin
+        </div>
       </div>
       <div class="signFont text-white text-center text-20px mt-40px">
         <div mb-10px>你不需要一开始就很厉害</div>
