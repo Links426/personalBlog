@@ -39,7 +39,7 @@
           <!-- 文章 -->
           <div flex-1 mr-30px flex-col flex>
             <div
-              class="pointer h-200px p-20px bg-white rounded-10px mb-16px flex"
+              class="pointer h-200px p-20px bg-white rounded-10px mb-16px flex cardShadow transition-3s"
               v-for="item in articleList"
               :key="item.id"
             >
@@ -94,7 +94,7 @@
           <div>
             <!-- 摄影 -->
             <div
-              class="w-390px h-530px p-30px bg-white rounded-10px text-#3b3948 font-700 text-18px"
+              class="w-390px h-530px p-30px bg-white rounded-10px text-#3b3948 font-700 text-18px cardShadow transition-3s"
             >
               <div>摄影</div>
               <!-- 内容 -->
@@ -105,7 +105,7 @@
             </div>
             <!-- 随记 -->
             <div
-              class="w-390px h-530px p-30px bg-white rounded-10px text-#3b3948 font-700 text-18px mt-30px overflow-scroll scrollHidden"
+              class="w-390px h-530px p-30px bg-white rounded-10px text-#3b3948 font-700 text-18px mt-30px overflow-scroll scrollHidden cardShadow transition-3s"
             >
               <div>随记</div>
               <!-- 如果没有内容，则出现的东西 -->

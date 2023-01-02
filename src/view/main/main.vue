@@ -103,6 +103,8 @@ const activeMenu = (item: number) => {
     router.push('/technology')
   } else if (item === 3) {
     router.push('/download')
+  } else if (item === 4) {
+    router.push('/about')
   }
 }
 onMounted(() => {

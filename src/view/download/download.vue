@@ -138,8 +138,5 @@ const sourceList = reactive([
   top: 10px;
   left: 430px;
 }
-/* 卡片阴影 */
-.cardShadow:hover {
-  box-shadow: 0px 4px 43px -19px rgba(0, 0, 0, 0.3);
-}
+
 </style>
