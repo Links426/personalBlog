@@ -23,9 +23,93 @@
       <!-- 横幅模块 -->
       <div>
         <!-- 横幅内容 -->
-        <div w-full h-460px bg-white rounded-20px pl-30px pr-30px inline-block>
-          <div relative left-0>123</div>
-          <div relative left-0>123</div>
+        <div w-full h-460px bg-white rounded-20px flex relative>
+          <transition name="minus-icon">
+            <div
+              absolute
+              w-full
+              h-full
+              flex
+              v-if="scrollButtonSelectedNum % 2 === 0"
+            >
+              <div
+                class="w-60% h-full flex flex-col justify-between pl-20px pt-30px pb-30px rounded-l-20px"
+              >
+                <div class="text-32px text-#1d1b26 font-500">
+                  留言墙<br />
+                  等你来留言
+                </div>
+                <div class="text-#56545f">
+                  单聊、群聊<br />
+                  可发送文字、表情、图片、语音、位置...
+                </div>
+                <div class="text-#adafb8 text-14px">
+                  如您对这个应用感兴趣，欢迎下载使用。当然对于需要查看设计稿和下载切图
+                  的同学，点击下方对应入口查阅。详细视频请访问b站。
+                </div>
+                <div flex>
+                  <div
+                    class="linearButton w-110px h-46px rounded-24px flex-center font-500 text-14px mr-10px"
+                  >
+                    去留言 ~
+                  </div>
+                  <div
+                    class="w-140px h-46px rounded-26px flex-center font-500 text-14px text-white bg-#4380FF"
+                  >
+                    访问设计稿<i
+                      class="iconfont icon-nav_icon_fabuguanli ml-4px"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-40% h-full rounded-r-20px bannerImg1 bg-contain ml-20px"
+              ></div>
+            </div>
+          </transition>
+          <transition name="minus-icon">
+            <div
+              absolute
+              w-full
+              h-full
+              flex
+              v-if="scrollButtonSelectedNum % 2 !== 0"
+            >
+              <div
+                class="w-60% h-full flex flex-col justify-between pl-20px pt-30px pb-30px rounded-l-20px"
+              >
+                <div class="text-32px text-#1d1b26 font-500">
+                  vue+node.js<br />
+                  0到1实现即时通讯聊天室
+                </div>
+                <div class="text-#56545f">
+                  很多事情值得记录，当然也值得回味。
+                </div>
+                <div class="text-#adafb8 text-14px">
+                  如您对留言板感兴趣，欢迎来贴便签纸。当然对于需要宣看设计稿和下载切图
+                  的同学，点击下方对应入口查阅。详细视频请访问b站。
+                </div>
+                <div flex>
+                  <div
+                    class="linearButton w-110px h-46px rounded-24px flex-center font-500 text-14px mr-10px"
+                  >
+                    去留言 ~
+                  </div>
+                  <div
+                    class="w-140px h-46px rounded-26px flex-center font-500 text-14px text-white bg-#4380FF"
+                  >
+                    访问设计稿<i
+                      class="iconfont icon-nav_icon_fabuguanli ml-4px"
+                      style="font      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-40% h-full rounded-r-20px bannerImg2 bg-contain ml-20px"
+              ></div>
+            </div>
+          </transition>
         </div>
         <!-- 横幅按钮 -->
         <div flex justify-between mt-20px mr-20px>
@@ -189,7 +273,7 @@ onMounted(() => {
   localStorage.setItem('page', 'index')
   timeInter = setInterval(() => {
     scrollButtonSelectedNum.value++
-  }, 3000)
+  }, 5000)
 })
 onUnmounted(() => {
   clearInterval(timeInter) //销毁
@@ -321,5 +405,18 @@ const personShareList = reactive([
 .personShare-icon {
   @apply w-56px h-56px flex-center rounded-10px text-white;
   font-size: 30px;
+}
+.linearButton {
+  background: linear-gradient(90deg, #ebc8fc 1%, #bce9fd 100%);
+}
+
+/* 横幅图片 */
+.bannerImg1 {
+  background-image: url('@/static/img/QQ20221118-0.png');
+  background-repeat: no-repeat;
+}
+.bannerImg2 {
+  background-image: url('@/static/img/94649749_p0.png');
+  background-repeat: no-repeat;
 }
 </style>

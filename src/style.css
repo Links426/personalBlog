@@ -8,6 +8,14 @@ div {
 .transition-3s {
   transition: all 0.3s;
 }
+/* 0.3s的动画 */
+.transition-6s {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
 /* 隐藏滚动条 */
 .scrollHidden::-webkit-scrollbar {
   width: 0 !important;
